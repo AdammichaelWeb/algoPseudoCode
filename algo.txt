@@ -51,6 +51,8 @@ SINON SI ageMois = 0
 	alors
 		ageJour = actualDay-birthDay ;//age en jour
 
+FIN SI
+
 
 
 		
