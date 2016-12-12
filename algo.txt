@@ -1,0 +1,43 @@
+-stocker des données
+-texte/condition
+-boucles
+
+var tableau {250,10,12,5,24,3542,50}
+var longueurDuTableau = tableau.lenght;
+
+
+
+
+
+
+
+actualDate=12/12/2016
+
+var actualYear=2016
+var actualMounth=12
+var actualDay=12
+
+BirthDate=28/10/1979
+
+var birthYear=1979
+var birthMounth=10
+var birthDay=28
+
+var age=actualYear - birthYear;
+
+SI actualMonth < birthMounth // on teste les mois
+	Alors 
+		age = age - 1 ;
+
+SINON SI actualMounth == birthMounth
+	Alors
+		Si actualDay < birthDay //on teste les jours
+			Alors
+				age = age -1
+
+		FIN SI
+
+FIN SI
+
+
+
