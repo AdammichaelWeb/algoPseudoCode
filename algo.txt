@@ -31,13 +31,27 @@ SI actualMonth < birthMounth // on teste les mois
 
 SINON SI actualMounth == birthMounth
 	Alors
-		Si actualDay < birthDay //on teste les jours
+		SI actualDay < birthDay //on teste les jours
 			Alors
-				age = age -1
+				age = age -1 ;
 
 		FIN SI
 
 FIN SI
 
+SI age=0//donc moins d un an
+	Alors
+		ageMois=actualMonth-birthMounth;//age en mois
 
+	SI ageMois<0
+		alors ageMois = ageMois +12 ;
+	FIN SI
+
+SINON SI ageMois = 0
+	alors
+		ageJour = actualDay-birthDay ;//age en jour
+
+
+
+		
 
